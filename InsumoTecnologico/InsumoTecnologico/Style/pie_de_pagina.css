@@ -1,0 +1,66 @@
+﻿/*
+    @Author:    Lucas Uggeri
+    @Date:      06/06/2021 21:05
+*/
+
+footer {
+    box-shadow: -2px -4px 17px 0px cyan;
+    border-top: solid 1px aqua;
+    background: #333333b3;
+    height: 183px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo-texto-silenciado {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+.texto-silenciado {
+    color: #ffffff;
+    font-family: monospace;
+}
+
+.enlace:link {
+    color: #09ddff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.enlace:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: aqua;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.enlace:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.div-footer-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-footer-2 {
+    width: -webkit-fill-available;
+    position: absolute;
+    margin: 5px;
+    border-top: solid 1px gray;
+    bottom: 0;
+}
+
+.contenedor-texto-1 {
+    width: 45vh;
+}

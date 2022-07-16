@@ -1,0 +1,62 @@
+﻿/*
+    @Author:    Lucas Uggeri
+    @Date:      06/06/2021 21:05
+*/
+
+body {
+    margin: 0;
+    position: relative;
+    background: url("../Picture/1366_2000.jpeg") fixed no-repeat center;
+    background-size: cover;
+}
+
+nav {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+ul.topnav {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333333b3;
+}
+
+    ul.topnav li {
+        float: left;
+    }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            ul.topnav li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            ul.topnav li a.active {
+                background-color: #0698AE;
+            }
+
+            ul.topnav li a.inactive:hover {
+                background-color: #333;
+            }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}

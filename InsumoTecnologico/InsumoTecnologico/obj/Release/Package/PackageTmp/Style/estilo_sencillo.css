@@ -1,0 +1,223 @@
+﻿/*
+    @Author:    Lucas Uggeri
+    @Date:      06/06/2021 21:05
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-image: url('../Picture/96333bbaca1bb2f89c9e4d8234e031a1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor-transparente {
+    background-color: transparent;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Navegación Superior */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+    ul.topnav li {
+        float: left;
+    }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+            ul.topnav li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            ul.topnav li a.active {
+                background-color: #0698AE;
+            }
+
+            ul.topnav li a.inactive:hover {
+                background-color: #333;
+            }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Imagen de Fondo */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Titulo y SubTitulo */
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+}
+
+.sub-titulo {
+    margin-top: 0px;
+    color: #F6F6F6;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-size: 22px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Pie de Pagina */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+.borde-superior {
+    border-top: 1px solid red;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+}
+
+.contenedor {
+    background-color: #333;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Supuestamente Oscurece un Poco El Color Del Texto */
+
+.texto-silenciado {
+    color: #E9E9E9;
+}
+
+@media (max-width: 600px) {
+    footer {
+        line-height: 40px;
+    }
+
+    .texto-silenciado {
+        font-size: 20px;
+    }
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Color Del Enlace/Link En Cada Acción */
+
+.enlace:link {
+    color: #3366BB;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.enlace:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: aqua;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.enlace:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contenedor-insumos {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo-insumos {
+    font-family: sans-serif;
+    margin-left: 5px;
+    color: #00fff3;
+    font-size: 3em;
+    text-shadow: -3px -2px black;
+}
+
+.contenedor-catalogo-titulo {
+    height: 10vh;
+    margin-top: -30px;
+}
+
+.contenedor-catalogo {
+    border-radius: 4px;
+    padding: 5px;
+    background: #1d1d1d;
+    margin: 5px;
+}
+
+.titulo-catalogo {
+    color: #00ffa1;
+}
+
+.contenedor-imagen-insumo {
+    display: flex;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.mostrar-precio {
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 30vh;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Texto  */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+

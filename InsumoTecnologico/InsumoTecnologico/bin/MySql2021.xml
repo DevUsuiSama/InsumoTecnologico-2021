@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>MySql2021</name></assembly>
+<members>
+<member name="P:LosMuzhazhosEstudiosos.DB.MySql2021.SelectFrom(System.String)">
+ <summary>
+ Script: Obtiene una lista con todas la columnas.
+ </summary>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.UpdateFrom(System.String,System.String,System.String)">
+ <summary>
+ Script: Actualiza valores de una o mas columnas.
+ </summary>
+ <param name="tabla">Ingrese el nombre de la tabla</param>
+ <param name="parametros">Ingrese el nombre de las columnas. Ejemplo => [ `DNI` = @DNI, `Nombre` = @Nombre ] </param>
+ <param name="identificador">Ejemplo de Identificador => [ `DNI` = @DNI ]</param>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.SelectConditionFromGroupByOrderByLimit1(System.String,System.String,System.String,System.String)">
+ <summary>
+ Script: Segun la condicion establecida, se mostrara un solo resultado, dependiendo del agrupamiento y orden.
+ </summary>
+ <param name="tabla">Ingrese el nombre de la tabla</param>
+ <param name="condicion">Ejemplo de condicion => [ @Nombre = `Nombre`, TRUE, FALSE ] </param>
+ <param name="agrupado_por">Ingrese el nombre de una columna</param>
+ <param name="ordenado_por">Simplemente ponga un Alias. Ejemplo => [ valor ]</param>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.SelectColumnFrom(System.String,System.String)">
+ <summary>
+ Script: Obtiene una lista con una sola columna o varias.
+ </summary>
+ <param name="tabla">Ingrese el nombre de la tabla</param>
+ <param name="columna">Ingrese el nombre de la columna</param>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.InsertInto(System.String,System.String,System.String)">
+ <summary>
+ Script: Introducir valores en (x) tabla.
+ </summary>
+ <param name="tabla">Ingrese el nombre de la tabla</param>
+ <param name="parametros">Ingrese el nombre de las columnas</param>
+ <param name="identificador">Ejemplo de Identificador => [ @Nombre, @Apellido ]</param>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.GestionarBaseDeDatosAvanzado(Microsoft.FSharp.Core.FSharpFunc{MySql.Data.MySqlClient.MySqlCommand,MySql.Data.MySqlClient.MySqlCommand})">
+ <summary>
+ Este metodo posee tres tipo de operacion => [ SelectConditionReturnSingleValue ].
+ </summary>
+ <param name="proceso">Recibe una funcion lambda</param>
+ <return>Si la consulta se realizo de manera exitosa devuelve una valor true sino una valor false</return>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.GestionarBaseDeDatos(Microsoft.FSharp.Core.FSharpFunc{MySql.Data.MySqlClient.MySqlCommand,MySql.Data.MySqlClient.MySqlCommand})">
+ <summary>
+ Este metodo posee tres tipo de operacion => [ Insert, Update, Delete ].
+ </summary>
+ <param name="proceso">Recibe una funcion lambda</param>
+ <return>Si la consulta se realizo de manera exitosa devuelve una valor true sino una valor false</return>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.GestionarBaseDeDatos(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{MySql.Data.MySqlClient.MySqlDataReader,System.Boolean},System.Boolean})">
+ <summary>
+ Ejecuta por defecto el script SelectColumnFrom.
+ </summary>
+ <param name="proceso">Recibe una funcion lambda</param>
+ <return>Si la consulta se realizo de manera exitosa devuelve una valor true sino una valor false</return>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.GestionarBaseDeDatos(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.Data.DataTable,System.Boolean},System.Boolean})">
+ <summary>
+ Ejecuta por defecto el script SelectFrom.
+ </summary>
+ <param name="proceso">Recibe una funcion lambda</param>
+ <return>Si la consulta se realizo de manera exitosa devuelve una valor true sino una valor false</return>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.DeleteFrom(System.String,System.String)">
+ <summary>
+ Script: Elimina un valor de una tablas.
+ </summary>
+ <param name="tabla">Ingrese el nombre de la tabla</param>
+ <param name="identificador">Ejemplo de Identificador => [ `DNI` = @DNI ]</param>
+</member>
+<member name="M:LosMuzhazhosEstudiosos.DB.MySql2021.ConectarMySql">
+ <summary>
+ Como bien indica su nombre, este metodo nos permitira realizar la conexion a la base de datos
+ </summary>
+ <return>Si la conexion de establece exitosamente devuelve un valor verdadero sino falso</return>
+</member>
+</members>
+</doc>

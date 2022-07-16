@@ -1,0 +1,136 @@
+﻿/*
+    @Author:    Lucas Uggeri
+    @Date:      06/06/2021 21:05
+*/
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Texto  */
+
+.crear-cuenta {
+    text-align: center;
+    color: #00ffb8;
+    font-family: 'Century Gothic';
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+}
+
+b {
+    color: #00ffdc;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Iniciar Sesion */
+
+form {
+    height: auto;
+}
+
+label {
+    color: #00ffdc;
+    text-shadow: 1px 1px 1px black;
+}
+
+.centrar-boton {
+    text-align: center;
+    width: 100%;
+}
+
+input[type=text], input[type=password], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #05C880;
+    }
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Ubuntu Mono';
+    border-radius: 4px;
+}
+
+    button:hover {
+        background-color: #05C880;
+    }
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* Imagen  */
+
+.contenedor_de_imagen {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.contenedor-input {
+    margin: 0 auto;
+    padding: 16px;
+}
+
+span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+/* +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.contenedor_de_imagen_parte_dos {
+    margin: 24px 0 12px 0;
+}
+
+.nuevo-sub-titulo-para-contacto {
+    text-shadow: 1px 1px 1px black;
+    color: #F6F6F6;
+}
+
+@media (max-width: 600px) {
+    .nuevo-sub-titulo-para-contacto {
+        font-size: 20px;
+    }
+}
+
+.hijo {
+    line-height: 25px;
+}
+
+
+.centrar-elementos-paralelos {
+    display: flex;
+    justify-content: center;
+}
+
+.separar-elementos {
+    padding: 10px;
+    margin: 10px;
+}
